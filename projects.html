@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="bg-gray-900 text-white py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h2 class="text-3xl font-bold mb-4">Why hire me?</h2>
+              <p class="mb-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque consequat, faucibus et, et.
+              </p>
+              <div class="flex space-x-4">
+                <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg" id="experienceBtn">
+                  Experience
+                </button>
+                <button class="bg-transparent hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-lg" id="educationBtn">
+                  Education
+                </button>
+                <button class="bg-transparent hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-lg" id="skillsBtn">
+                  Skills
+                </button>
+                <button class="bg-transparent hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-lg" id="aboutBtn">
+                  About me
+                </button>
+              </div>
+            </div>
+            <div>
+              <div class="section" id="experience">
+                <h2 class="text-3xl font-bold mb-4">My experience</h2>
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-date">2022 - Present</div>
+                    <div class="timeline-title">Full Stack Developer</div>
+                    <div class="timeline-content">Tech Solutions Inc.</div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-date">2020 - 2021</div>
+                    <div class="timeline-title">Freelance Web Developer</div>
+                    <div class="timeline-content">E-commerce Startup</div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-date">Summer 2021</div>
+                    <div class="timeline-title">Front-End Developer Intern</div>
+                    <div class="timeline-content">Web Design Studio</div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-date">2019 - 2020</div>
+                    <div class="timeline-title">Teaching Assistant</div>
+                    <div class="timeline-content">Tech Academy</div>
+                  </div>
+                </div>
+              </div>
+              <div class="section" id="education" style="display: none;">
+                <h2 class="text-3xl font-bold mb-4">My education</h2>
+                <!-- Add your education details here -->
+              </div>
+              <div class="section" id="skills" style="display: none;">
+                <h2 class="text-3xl font-bold mb-4">My skills</h2>
+                <!-- Add your skills here -->
+              </div>
+              <div class="section" id="about" style="display: none;">
+                <h2 class="text-3xl font-bold mb-4">About me</h2>
+                <!-- Add your about details here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <style>
+        /* The CSS styles remain the same as before */
+      </style>
+      
+      <script>
+        // Get the button elements
+        const experienceBtn = document.getElementById('experienceBtn');
+        const educationBtn = document.getElementById('educationBtn');
+        const skillsBtn = document.getElementById('skillsBtn');
+        const aboutBtn = document.getElementById('aboutBtn');
+      
+        // Add click event listeners to the buttons
+        experienceBtn.addEventListener('click', () => showSection('experience'));
+        educationBtn.addEventListener('click', () => showSection('education'));
+        skillsBtn.addEventListener('click', () => showSection('skills'));
+        aboutBtn.addEventListener('click', () => showSection('about'));
+      
+        function showSection(sectionId) {
+          // Hide all sections
+          document.querySelectorAll('.section').forEach(section => {
+            section.style.display = 'none';
+          });
+      
+          // Show the selected section
+          document.getElementById(sectionId).style.display = 'block';
+        }
+      
+        // Initially, show the experience section
+        showSection('experience');
+      </script>
+</body>
+</html>

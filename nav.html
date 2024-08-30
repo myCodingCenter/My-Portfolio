@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Active Navbar Example</title>
+    <style>
+        .nav-item{
+            background-color: red;
+            margin: 1rem 0px;
+            padding: 1rem 2rem;
+            list-style: none;
+        }
+        .nav-item a{
+            text-decoration: none;
+            color: white;
+        }
+        .active{
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Services</a></li>
+            <!-- Add more menu items as needed -->
+        </ul>
+    </nav>
+    <script>
+        const navItems = document.querySelectorAll('.nav-item');
+        navItems.forEach(item => {
+            item.addEventListener('click', function () {
+                navItems.forEach(navItem => navItem.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+    </script>
+</body>
+
+</html>
