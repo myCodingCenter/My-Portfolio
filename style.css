@@ -31,3 +31,20 @@
     font-size: 36px;
     margin-left: 50px;
 }
+
+.active {
+    background-color: rgba(1, 255, 1, 0.747);
+    color: white;
+    transition: 1s ease-in-out;
+}
+
+#contact input,
+textarea {
+    background-color: gray;
+    color: white;
+    background: transparent;
+}
+
+#resume-btns {
+    color: greenyellow;
+}
