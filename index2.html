@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Rahul Shrestha</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-gray-800 text-white font-mono w-[80%] m-auto">
+    <!-- header section  -->
+    <header
+        class="fixed top-0 bg-gray-800 w-full h-[15vh] grid lg:grid-cols-3 grid-cols-2 items-center text-2xl shadow-md">
+        <div class="flex items-end">
+            <span
+                class="text-green-500 lg:text-3xl font-mono border-dashed px-2 border-b-2 py-2 border-green-800">&lt;Rahul/&gt;</span>
+        </div>
+        <nav class="col-span-2 h-full hidden lg:block right-2">
+            <ul class="w-full flex justify-around items-center h-full" id="navul">
+                <li class="py-2 px-3 hover:bg-green-500 hover:text-gray-900 transition duration-300"
+                    id="homeli navItems"><a href="#home">Home</a></li>
+                <li class="py-2 px-3 hover:bg-green-500 hover:text-gray-900 transition duration-300"
+                    id="aboutli navItems"><a href="#about">About Me</a></li>
+                <li class="py-2 px-3 hover:bg-green-500 hover:text-gray-900 transition duration-300"
+                    id="resumeli navItems"><a href="#resume">Resume</a></li>
+                <li class="py-2 px-3 hover:bg-green-500 hover:text-gray-900 transition duration-300"
+                    id="projectsli navItems"><a href="#projects">Projects</a></li>
+                <li class="py-2 px-3 hover:bg-green-500 hover:text-gray-900 transition duration-300"
+                    id="contactli navItems"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="">
+        <!-- home section -->
+        <section id="home" class="h-screen flex items-center bg-gradient-to-b from-gray-900 to-gray-800">
+            <div class="container mx-auto px-6 lg:px-20 grid lg:grid-cols-2 gap-10 items-center">
+            <!-- Text Content -->
+            <div class="text-center lg:text-left">
+                <p class="text-green-500 text-lg font-semibold">Full Stack Developer</p>
+                <h1 class="text-4xl lg:text-6xl font-bold mt-4">Hi, I'm <span class="text-green-500">Rahul Shrestha</span></h1>
+                <p class="text-gray-300 mt-4 text-lg lg:text-xl leading-relaxed">
+                I specialize in creating elegant digital experiences using modern technologies.
+                </p>
+                <p class="py-3 mb-2 md:text-2xl font-bold text-xl">
+                Skilled in <span id="typing" class="typer" data-delay="150" data-words="HTML, CSS, JavaScript, Python, C, Django, Tailwind CSS" data-colors="red"></span>
+                <span style="font-size:1.2em;vertical-align:middle;" class="cursor" data-cursorDisplay="|" data-owner="typing"></span>
+                </p>
+                <div class="mt-6 flex flex-wrap justify-center lg:justify-start gap-4">
+                <a href="#" class="bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-green-600 transition duration-300">
+                    Download CV
+                </a>
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/profile.php?id=100090404736108" target="_blank">
+                    <img src="img/facebook.png" alt="Facebook" class="h-8 w-8">
+                    </a>
+                    <a href="https://github.com/myCodingCenter" target="_blank">
+                    <img src="img/github.png" alt="GitHub" class="h-8 w-8">
+                    </a>
+                    <a href="https://www.linkedin.com/in/rahul-shrestha-ba7470353/" target="_blank">
+                    <img src="img/linkedin.png" alt="LinkedIn" class="h-8 w-8">
+                    </a>
+                    <a href="https://youtube.com/@rahul-shrestha-w9q?feature=shared" target="_blank">
+                    <img src="img/youtube.png" alt="YouTube" class="h-8 w-8">
+                    </a>
+                </div>
+                </div>
+            </div>
+            <!-- Image Content -->
+            <div class="flex justify-center lg:justify-end">
+                <img src="img/awesome.png" alt="Rahul Shrestha" class="rounded-lg shadow-lg max-w-full h-auto">
+            </div>
+            </div>
+        </section>
+        <!-- About Me Section -->
+        <section id="about" class="py-20 bg-gray-900 text-gray-300">
+            <div class="container mx-auto px-6 lg:px-20">
+                <h2 class="text-4xl font-bold text-center text-green-500 mb-10">About Me</h2>
+                <div class="grid lg:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <p class="text-lg leading-relaxed">
+                            I'm Rahul Shrestha, a passionate Full Stack Developer with a knack for creating elegant and efficient digital solutions. With a strong foundation in modern web technologies, I aim to deliver exceptional user experiences.
+                        </p>
+                        <p class="mt-4 text-lg leading-relaxed">
+                            When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and sharing knowledge with the developer community.
+                        </p>
+                    </div>
+                    <div class="flex justify-center lg:justify-end">
+                        <img src="img/awesome.png" alt="About Me" class="rounded-lg shadow-lg max-w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="py-20 bg-gray-800 text-gray-300">
+            <div class="container mx-auto px-6 lg:px-20">
+                <h2 class="text-4xl font-bold text-center text-green-500 mb-10">Resume</h2>
+                <div class="grid lg:grid-cols-2 gap-10">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-green-500">Education</h3>
+                        <ul class="mt-4 space-y-4">
+                            <li>
+                                <h4 class="text-xl font-bold">Bachelor's in Computer Science</h4>
+                                <p class="text-gray-400">XYZ University, 2020 - 2024</p>
+                            </li>
+                            <li>
+                                <h4 class="text-xl font-bold">High School</h4>
+                                <p class="text-gray-400">ABC School, 2018 - 2020</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-green-500">Experience</h3>
+                        <ul class="mt-4 space-y-4">
+                            <li>
+                                <h4 class="text-xl font-bold">Full Stack Developer Intern</h4>
+                                <p class="text-gray-400">Tech Solutions, 2023 - Present</p>
+                                <p>Developed and maintained web applications using modern frameworks and tools.</p>
+                            </li>
+                            <li>
+                                <h4 class="text-xl font-bold">Freelance Developer</h4>
+                                <p class="text-gray-400">2021 - 2023</p>
+                                <p>Worked on various client projects, delivering high-quality solutions tailored to their needs.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-gray-900 text-gray-300">
+            <div class="container mx-auto px-6 lg:px-20">
+                <h2 class="text-4xl font-bold text-center text-green-500 mb-10">Projects</h2>
+                <div class="grid lg:grid-cols-3 gap-10">
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <img src="img/portpolio-img.png" alt="Project 1" class="rounded-lg mb-4">
+                        <h3 class="text-2xl font-bold text-green-500">Project One</h3>
+                        <p class="mt-2">A web application built with React and Node.js to manage tasks efficiently.</p>
+                        <a href="#" class="text-green-500 hover:underline mt-4 block">View Project</a>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <img src="img/webdeveloper.png" alt="Project 2" class="rounded-lg mb-4">
+                        <h3 class="text-2xl font-bold text-green-500">Project Two</h3>
+                        <p class="mt-2">An e-commerce platform developed using Django and Tailwind CSS.</p>
+                        <a href="#" class="text-green-500 hover:underline mt-4 block">View Project</a>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <img src="img/webdeveloper.png" alt="Project 3" class="rounded-lg mb-4">
+                        <h3 class="text-2xl font-bold text-green-500">Project Three</h3>
+                        <p class="mt-2">A portfolio website showcasing my skills and projects, built with HTML and CSS.</p>
+                        <a href="#" class="text-green-500 hover:underline mt-4 block">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-800 text-gray-300">
+            <div class="container mx-auto px-6 lg:px-20">
+                <h2 class="text-4xl font-bold text-center text-green-500 mb-10">Contact</h2>
+                <form action="#" method="POST" class="max-w-2xl mx-auto">
+                    <div class="grid gap-6">
+                        <div>
+                            <label for="name" class="block text-lg font-semibold">Name</label>
+                            <input type="text" id="name" name="name" class="w-full p-3 rounded-lg bg-gray-700 text-white" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-lg font-semibold">Email</label>
+                            <input type="email" id="email" name="email" class="w-full p-3 rounded-lg bg-gray-700 text-white" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-lg font-semibold">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full p-3 rounded-lg bg-gray-700 text-white" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="mt-6 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-green-600 transition duration-300">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="flex items-center justify-center md:mt-0 mt-5 h-12">
+        Copyright &copy; goes to Rahul Shrestha.
+        <div id="my_name"></div>
+    </footer>
+    </div class="bg-blue-500">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Typer js  -->
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+    <script src="scripts.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
